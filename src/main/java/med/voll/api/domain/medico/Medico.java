@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import med.voll.api.domain.endereco.Endereco;
 
 @Table(name = "medicos")
-@Entity(name = "medico")
+@Entity(name = "Medico")
 @Getter    // Gera os Getters
 @NoArgsConstructor //Gera os Construtores vazios
 @AllArgsConstructor // Construtor que recebe todos os campos

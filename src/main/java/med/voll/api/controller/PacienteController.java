@@ -1,5 +1,6 @@
 package med.voll.api.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import med.voll.api.domain.paciente.DadosDetalhamentoPaciente;
 import med.voll.api.domain.paciente.DadosListagemPaciente;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 import med.voll.api.domain.paciente.DadosCadastroPaciente;
 
+@SecurityRequirement(name = "bearer-key")
 @RestController
 @RequestMapping("pacientes")
 public class PacienteController {
